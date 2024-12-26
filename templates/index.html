@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Generator</title>
+    <!-- Make sure the CSS is linked properly -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Article Generator</h1>
+        
+        <!-- Form to take topic input -->
+        <form method="POST" action="/generate_article">
+            <label for="topic">Enter Topic:</label>
+            <input type="text" id="topic" name="topic" required />
+            <button type="submit">Generate Article</button>
+        </form>
+
+        <!-- Display generated article if available -->
+        {% if article %}
+            <div id="articleResult">
+                <h3>Generated Article:</h3>
+                <p id="articleText">{{ article }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
