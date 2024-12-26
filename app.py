@@ -61,7 +61,7 @@ from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
 _ = load_dotenv(find_dotenv())
-api_key  = os.getenv('hncHPkcDEqwAhEf303KSV49UIU4280bVlGMSM9G7vYlI1FNYR7eJ32MvhT_wIlPmCHgeuE2wkoT3BlbkFJVTaHqlQU3HiRoVYZI6uVOk8P40wAaeKWGRRr9GG4LmzZOQM2SXhuWyw9dS7mp0C5HfJRG0gRwA')
+api_key  = os.getenv('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')
 
 # Initialize the Flask app
 app = Flask(__name__)
