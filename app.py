@@ -38,6 +38,10 @@ chain = RunnableSequence(artical_generation | llm)
 def index():
     return render_template("index.html")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ab1b20f0e27144767a4e346b6fa5b7722d345e4
 # Route to handle form submission
 @app.route("/generate_article", methods=["POST"])
 def generate_article():
@@ -55,6 +59,7 @@ def generate_article():
 
 if __name__ == "__main__":
     app.run(debug=True)
+<<<<<<< HEAD
 
 # from flask import Flask, render_template, request, jsonify
 # from langchain_openai import ChatOpenAI
@@ -108,3 +113,5 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+=======
+>>>>>>> 0ab1b20f0e27144767a4e346b6fa5b7722d345e4
