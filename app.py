@@ -8,8 +8,8 @@ from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
 _ = load_dotenv(find_dotenv())
-# api_key  = os.getenv('MY_OPENAI_API_KEY')
-api_key="None"
+api_key  = os.getenv('MY_OPENAI_API_KEY')
+
 # Initialize the Flask app
 app = Flask(__name__)
 
