@@ -14,8 +14,7 @@ api_key  = os.getenv('MY_OPENAI_API_KEY')
 app = Flask(__name__)
 
 # Initialize the language model (GPT)
-llm = ChatOpenAI(api_key="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", model="gpt-4o-mini", temperature=1)
-
+llm = ChatOpenAI(api_key=api_key, model="gpt-4o-mini", temperature=1)
 TEMPLATE = '''
 "Write an engaging and informative article on the topic of {text}.
 The article should be 150–200 words long, written in a professional tone, and targeted at a general audience. 
