@@ -8,13 +8,14 @@ from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
 _ = load_dotenv(find_dotenv())
-api_key  = os.getenv('MY_OPENAI_API_KEY')
-
+# api_key  = os.getenv('MY_OPENAI_API_KEY')
+api_key="None"
 # Initialize the Flask app
 app = Flask(__name__)
 
 # Initialize the language model (GPT)
 llm = ChatOpenAI(api_key=api_key, model="gpt-4o-mini", temperature=1)
+
 TEMPLATE = '''
 "Write an engaging and informative article on the topic of {text}.
 The article should be 150–200 words long, written in a professional tone, and targeted at a general audience. 
