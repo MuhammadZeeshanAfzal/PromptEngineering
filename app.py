@@ -14,7 +14,7 @@ api_key  = os.getenv('MY_OPENAI_API_KEY')
 app = Flask(__name__)
 
 # Initialize the language model (GPT)
-llm = ChatOpenAI(api_key="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", model="gpt-4o-mini", temperature=1)
+llm = ChatOpenAI(api_key=api_key, model="gpt-4o-mini", temperature=1)
 
 TEMPLATE = '''
 "Write an engaging and informative article on the topic of {text}.
