@@ -67,7 +67,7 @@ api_key  = os.getenv('sk-proj-hncHPkcDEqwAhEf303KSV49UIU4280bVlGMSM9G7vYlI1FNYR7
 app = Flask(__name__)
 
 # Initialize the language model (GPT)
-llm = ChatOpenAI(api_key=api_key, model="gpt-4o-mini", temperature=1)
+llm = ChatOpenAI(api_key="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", model="gpt-4o-mini", temperature=1)
 
 TEMPLATE = '''
 "Write an engaging and informative article on the topic of {text}.
